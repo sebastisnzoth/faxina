@@ -33,3 +33,12 @@ a,button{-webkit-tap-highlight-color:transparent}
 ::-webkit-scrollbar-track{background:#eef5f0}
 ::-webkit-scrollbar-thumb{background:#8db7aa;border:2px solid #eef5f0;border-radius:12px}
 ::-webkit-scrollbar-thumb:hover{background:#528d80}
+
+/* WCAG-oriented legibility refinements: retain FloriClean visual identity. */
+#inicio .text-\[\#527075\],#servicos .text-\[\#68807f\],#sobre .text-\[\#60797a\],#contato .text-\[\#657d7c\]{color:#355459}
+#contato .text-\[\#758988\],footer .text-\[\#9cbcb7\]{color:#426269}
+#contato form input::placeholder,#contato form textarea::placeholder{color:#546b6a}
+#servicos .text-\[\#6b8081\],#perguntas .text-\[\#638081\]{color:#3c5c5f}
+#contato form input:focus-visible,#contato form select:focus-visible,#contato form textarea:focus-visible{outline:3px solid #07695c;outline-offset:2px}
+::selection{background:#b8ebd5;color:#103f42}
+@media(prefers-contrast:more){:root{--fc-teal:#075e55}a,button{outline-offset:3px}}
