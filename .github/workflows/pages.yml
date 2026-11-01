@@ -20,6 +20,13 @@ jobs:
           node-version: '22'
       - run: npm install
       - run: npm run build
+      - name: Verify crawlable HTML and SEO files
+        run: |
+          grep -q 'Faxina em Florianópolis' dist/index.html
+          grep -q 'application/ld+json' dist/index.html
+          grep -q 'rel="canonical"' dist/index.html
+          test -s dist/sitemap.xml
+          test -s dist/robots.txt
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
