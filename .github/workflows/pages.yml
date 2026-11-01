@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy FloriClean to GitHub Pages
 on:
   push:
     branches: [main]
@@ -8,7 +8,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: github-pages
   cancel-in-progress: true
 jobs:
   build:
