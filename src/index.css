@@ -15,3 +15,21 @@ button{cursor:pointer}
 .skip-link{position:absolute;left:1rem;top:-5rem;z-index:100;background:#fff;padding:.75rem 1rem;border-radius:.5rem}
 .skip-link:focus{top:1rem}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* FloriClean design language: editorial hospitality meets practical local service. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--fc-ink:#162d32;--fc-teal:#087e70;--fc-forest:#103f42;--fc-mint:#d7f3e7;--fc-canvas:#fbfcfa;--fc-border:#dae8df;scrollbar-color:#8db7aa #eef5f0}
+body{font-family:'DM Sans',ui-sans-serif,system-ui,sans-serif;overflow-x:hidden}
+.font-display,.section-title{font-family:'Manrope','DM Sans',sans-serif}
+.section-title{font-weight:800;text-wrap:balance}
+h1,h2,h3{text-wrap:balance}
+#contato form .form-error{font-size:.78rem;line-height:1.3;font-weight:650;color:#b42318;margin-top:-.15rem}
+#contato form [aria-invalid="true"]{border-color:#b42318;background:#fffafa}
+#contato form textarea{resize:vertical;min-height:7rem}
+a,button{-webkit-tap-highlight-color:transparent}
+@media(max-width:639px){#contato{padding-bottom:7rem}#contato form{padding:1.3rem}#inicio{overflow:hidden}}
+@media(forced-colors:active){:root{scrollbar-color:auto}button,a,input,select,textarea{forced-color-adjust:auto}}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:#eef5f0}
+::-webkit-scrollbar-thumb{background:#8db7aa;border:2px solid #eef5f0;border-radius:12px}
+::-webkit-scrollbar-thumb:hover{background:#528d80}
